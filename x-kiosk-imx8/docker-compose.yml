@@ -5,6 +5,8 @@ services:
     tty: true
     #command: "${ADDR-www.foundries.io}"
     command: --kiosk --no-first-run --incognito https://webglsamples.org/aquarium/aquarium.html
+    labels: 
+      io.compose-spec.config-hash: 9a7cb5e5d31650d2cbdcbd5c3b251a970753211a7f2de101660fcf99a58b52d9
     read_only: true
     network_mode: "host"
     tmpfs:
