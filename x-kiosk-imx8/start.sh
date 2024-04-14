@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # wait for display
-if [ ! -e /sys/class/graphics/fb0 ]; then
+if [ ! -e /sys/class/graphics/fbcon ]; then
     echo "Display not detected.  Will wait for it to show up ..."
 fi
-while [ ! -e /sys/class/graphics/fb0 ]; do
+while [ ! -e /sys/class/graphics/fbcon ]; do
     sleep 1
 done
 
