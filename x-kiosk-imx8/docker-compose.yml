@@ -4,7 +4,7 @@ services:
     restart: unless-stopped
     tty: true
     #command: mcmchris.com
-    command: "--kiosk --no-first-run --incognito mcmchris.com}"
+    command: "--kiosk --no-first-run --incognito https://mcmchris.com}"
     read_only: true
     network_mode: "host"
     tmpfs:
