@@ -3,8 +3,8 @@ services:
     image: hub.foundries.io/arduino/x-kiosk-imx8@sha256:a07318e778c9d8ec47614f912b3bc9d2bebc9fa7ff4d2966f4381a60340fd62f
     restart: unless-stopped
     tty: true
-    command: www.instagram.com
-    #command: "--kiosk --no-first-run --incognito https://mcmchris.com}"
+    #command: www.google.com
+    command: "--kiosk --no-first-run --incognito https://webglsamples.org/aquarium/aquarium.html"
     read_only: true
     network_mode: "host"
     tmpfs:
@@ -19,4 +19,3 @@ services:
     device_cgroup_rules:
     - 'c 199:* rmw'
     - 'c 226:* rmw'
-
