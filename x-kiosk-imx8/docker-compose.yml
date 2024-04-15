@@ -1,6 +1,6 @@
 services:
   xkiosk-imx8:
-    image: hub.foundries.io/arduino/x-kiosk-imx8@sha256:1baa1f61a0997f0221c6dba42907c3135c2f38da13f303e6237098b9cfa74fd9
+    image: hub.foundries.io/arduino/x-kiosk-imx8:latest
     restart: unless-stopped
     tty: true
     command: "${ADDR-www.foundries.io}"
