@@ -1,6 +1,6 @@
 services:
   xkiosk-imx8:
-    image: hub.foundries.io/arduino/x-kiosk-imx8@sha256:a07318e778c9d8ec47614f912b3bc9d2bebc9fa7ff4d2966f4381a60340fd62f
+    image: hub.foundries.io/arduino/x-kiosk-imx8
     restart: unless-stopped
     tty: true
     command: https://webglsamples.org/aquarium/aquarium.html
