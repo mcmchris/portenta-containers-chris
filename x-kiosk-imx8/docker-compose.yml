@@ -4,7 +4,7 @@ services:
     restart: unless-stopped
     tty: true
     #command: www.google.com
-    command: "--kiosk --no-first-run --incognito https://webglsamples.org/aquarium/aquarium.html"
+    command: "--kiosk --no-first-run --incognito http://webglsamples.org/aquarium/aquarium.html"
     read_only: true
     network_mode: "host"
     tmpfs:
